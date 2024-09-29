@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometry Genius</title>
+    <title>DOM Geometry Genius</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -40,10 +40,6 @@
                     </div>
                    <br>
                     <div>
-                        <p>Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
-                    </div>
-                   
-                    <div>
                         <button onclick="calculateTriangleArea()" class="btn"> Calculate</button>
                     </div>
                 </div>
@@ -62,9 +58,6 @@
                     </div>
                     <br>
                     <div>
-                        <p>Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
-                    </div>
-                    <div>
                         <button onclick="calculateRectangleArea()" class="btn"> Calculate</button>
                     </div>
                 </div>
@@ -82,9 +75,6 @@
                         <span>cm</span>
                     </div>
                    <br>
-                   <div>
-                    <p>Area: <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span></p>
-                </div>
                     <div>
                         <button onclick="calculateParallelogramArea()" class="btn"> Calculate</button>
                     </div>
@@ -92,6 +82,32 @@
             </div>
             <div class="calculation">
                 <h3><u> Area Calculation</u></h3>
+                <div>
+                    <p>Triangle Area: <span id="triangle-area" class="result">0</span> <span>cm<sup>2</sup></span></p>
+                </div>
+                <div>
+                    <p>Rectangle Area: <span id="rectangle-area" class="result">0</span> <span>cm<sup>2</sup></span></p>
+                </div>
+                <div>
+                    <p>Parallelogram Area: <span id="parallelogram-area" class="result">0</span> <span>cm<sup>2</sup></span></p>
+                </div>
+                <div>
+                    <p>Rhombus Area: <span id="rhombus-area" class="result">0</span> <span>cm<sup>2</sup></span></p>
+                </div>
+                <div>
+                    <p>Pentagon Area: <span id="pentagon-area" class="result">0</span> <span>cm<sup>2</sup></span></p>
+                </div> 
+                <div>
+                    <p>Ellipse Area: <span  id="ellipse-area" class="result">0</span> <span>cm<sup>2</sup></span></p>
+                </div>
+
+    <!-- Total Part -->
+                <div>
+                    <p>Total Area: <span id="total-area" class="total-area">0</span> <span>cm <sup>2</sup></span></p>
+                 </div>
+                 <div>
+                    <button onclick="calculateTotalArea()" class="btn">Total </button>
+                </div>
             </div>
         </div>
 
@@ -107,16 +123,13 @@
                         <h2>Rhombus</h2>
                         <p> Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
                     </div>
-                  <br>
                   <div>
                     <input id="rhombus-base" class="f-input" type="text" placeholder="b">
                     <span class="f-span">cm</span>
                     <input id="rhombus-height" class="s-input" type="text" placeholder="h">
                     <span>cm</span>
                 </div>
-                  <div>
-                    <p>Area: <span id="rhombus-area">0</span> <span>cm<sup>2</sup></span></p>
-                </div>
+                 <br>
                     <div>
                         <button onclick="calculateRhombusArea()" class="btn"> Calculate</button>
                     </div>
@@ -128,16 +141,13 @@
                         <h2> Pentagon</h2>
                         <p> Area (A) = 0.5 * p * b</p>
                     </div>
-                    <br>
                     <div>
                         <input id="pentagon-perimeter" class="f-input" type="text" placeholder="p">
                         <span class="f-span">cm</span>
                         <input id="pentagon-base" class="s-input" type="text" placeholder="b">
                         <span>cm</span>
                     </div>
-                    <div>
-                        <p>Area: <span id="pentagon-area">0</span> <span>cm<sup>2</sup></span></p>
-                    </div> 
+                     <br>
                     <div>
                         <button onclick="calculatePentagonArea()" class="btn"> Calculate</button>
                     </div>
@@ -150,16 +160,13 @@
                         <h2>Ellipse</h2>
                         <p> Area (A) = &pi;ab</p>
                     </div>
-                    <br>
                     <div>
                         <input id="ellipse-a" class="f-input" type="text" placeholder="a">
                         <span class="f-span">cm</span>
                         <input id="ellipse-b"  class="s-input" type="text" placeholder="b">
                         <span>cm</span>
                     </div>
-                    <div>
-                        <p>Area: <span  id="ellipse-area">0</span> <span>cm<sup>2</sup></span></p>
-                    </div>
+                   <br>
                     <div>
                         <button onclick="calculateEllipseArea()" class="btn"> Calculate</button>
                     </div>

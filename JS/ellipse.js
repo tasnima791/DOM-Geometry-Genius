@@ -29,3 +29,29 @@ function calculatePentagonArea(){
 
     setInnerText('pentagon-area', area)
 }
+
+
+// Total Area
+
+    // const triangleArea = document.getElementById('triangle-area')
+    // console.log(triangleArea);
+
+function calculateTotalArea() {
+
+    const triangleArea = parseFloat(document.getElementById('triangle-area').innerText) ;
+    const rectangleArea = parseFloat(document.getElementById('rectangle-area').innerText) ;
+    const parallelogramArea = parseFloat(document.getElementById('parallelogram-area').innerText);
+    const rhombusArea = parseFloat(document.getElementById('rhombus-area').innerText) ;
+    const pentagonArea = parseFloat(document.getElementById('pentagon-area').innerText) ;
+    const ellipseArea = parseFloat(document.getElementById('ellipse-area').innerText);
+
+    const totalArea = triangleArea + rectangleArea + parallelogramArea + rhombusArea + pentagonArea + ellipseArea;
+    
+    document.getElementById('total-area').innerText = totalArea;
+}
+
+
+
+
+
+

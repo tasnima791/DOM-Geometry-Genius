@@ -126,3 +126,9 @@ nav {
     width: 205px;
     height: 198px;
 }
+
+/* Total Part */
+
+.total-area{
+    color: red;
+}
